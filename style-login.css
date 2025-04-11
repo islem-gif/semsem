@@ -1,0 +1,142 @@
+/* Style de base */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  /* Conteneur principal */
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+  }
+  
+  /* Formulaire */
+  .login-form {
+    width: 800%;
+    height: 850px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #024a91; /* Bleu marine */
+    margin-bottom: 10px;
+  }
+  
+  /* Groupes d'input */
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  .input-group label {
+    font-size: 14px;
+    color: #2c3e50;
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  .input-group input,
+  .input-group select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    background-color: #ecf0f1;
+  }
+  
+  .input-group  select :focus
+  .iput-group input:focus {
+    border-color: #3498db; /* Bleu clair */
+    outline: none;
+  }
+  
+  /* Sexe */
+  .sexes label {
+    margin-right: 20px;
+  }
+  
+  .sexes input {
+    margin-right: 5px;
+  }
+  
+  
+  /* Bouton de connexion */
+  .btn-connexion {
+    width: 100%;
+    padding: 12px;
+    background-color: #2c3e50; /* Bleu marine */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-connexion:hover {
+    background-color: #1a2635; /* Teinte plus foncée du bleu marine */
+  }
+  
+  /* Lien hypertexte */
+  .account-link {
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .account-link a {
+    color: #3498db; /* Bleu clair */
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .account-link a:hover {
+    text-decoration: underline;
+  }
+  /* Style des champs de saisie */
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin: 0;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+input[type="password"]:focus {
+  border-color: #0906b6;
+  outline: none;
+}
+
+/* Messages d'erreur et de succès */
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+  display: none;
+}
+
+.success {
+  color: green;
+  font-size: 14px;
+  margin-top: 10px;
+  display: none;
+}
+  .btn-connexion:hover {
+    background-color: #1a2635; /* Teinte plus foncée du bleu marine */
+  }
+  

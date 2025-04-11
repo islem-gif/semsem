@@ -1,0 +1,106 @@
+/* Style de base */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Conteneur principal */
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  /* Formulaire à droite */
+  .form-container {
+    background-color: #fff;
+    width: 40%; /* Prendre environ la moitié de la page */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #002346; /* Bleu marine */
+    margin-bottom: 30px;
+    font-size: 24px;
+  }
+  
+  /* Groupes d'input */
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  .input-group label {
+    font-size: 14px;
+    color: #2c3e50;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    background-color: #ecf0f1;
+  }
+  
+  .input-group input:focus {
+    border-color: #3498db; /* Bleu clair */
+    outline: none;
+  }
+ 
+.forgot-password {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.forgot-password a {
+  color: #3498db; /* Bleu clair */
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
+}
+.btn-connexion {
+  padding: 12px 24px; /* Dimensions du bouton */
+  font-size: 18px; /* Taille du texte */
+  font-weight: bold; /* Texte en gras */
+  color: white; /* Couleur du texte */
+  background-color: #007BFF; /* Couleur de fond principale */
+  border: none; /* Pas de bordure */
+  border-radius: 8px; /* Coins arrondis */
+  cursor: pointer; /* Curseur indiquant que c'est cliquable */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
+  transition: all 0.3s ease; /* Transition fluide pour les interactions */
+  text-decoration: none; /* Retirer toute décoration liée aux liens */
+  display: inline-block; /* Le bouton se comporte comme un bloc */
+}
+
+.btn-connexion:hover {
+  background-color: #0056b3; /* Couleur de fond plus sombre au survol */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Ombre plus prononcée */
+  transform: translateY(-2px); /* Légère élévation du bouton */
+}
+
+.btn-connexion:active {
+  background-color: #003d80; /* Couleur plus foncée pendant un clic */
+  transform: translateY(2px); /* Effet d'enfoncement */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Ombre légèrement réduite */
+}
+
+  
+  

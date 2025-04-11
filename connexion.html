@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page de Connexion</title>
+  <link rel="stylesheet" href="style-connexion.css">
+  <style>
+    body {
+      /* Utiliser une image de fond */
+      background-image: url("backend\ connexion.jpg");
+      background-size: cover; /* L'image couvre toute la page */
+      background-position: center; /* Centrer l'image */
+      background-attachment: fixed; /* L'image reste fixe lorsqu'on défile */
+      margin: 0; /* Enlever la marge par défaut */
+      height: 100vh; /* Assurer que le body prend toute la hauteur de la fenêtre */
+    }
+  </style>
+</head>
+<body >
+  <div class="container">
+    <div class="form-container">
+      <h1>Connexion</h1>
+
+      <!-- Formulaire de connexion -->
+      <form action="#" method="POST">
+        <!-- Numéro de téléphone -->
+        <div class="input-group">
+          <label for="tel">Numéro de téléphone</label>
+          <input type="tel" id="tel" name="tel" placeholder="Entrez votre numéro de téléphone" required>
+        </div>
+
+        <!-- Mot de passe -->
+        <div class="input-group">
+          
+          <label for="password">Mot de passe</label>
+          <input type="password" id="password" name="password" placeholder="Entrez votre mot de passe" required>
+        </div>
+        <!-- Lien hypertexte "Mot de passe oublié ?" -->
+        <div class="forgot-password">
+          <a href="reset-password.html">J'ai oublié mon mot de passe</a>
+        </div>
+
+
+        <!-- Bouton de connexion -->
+         
+        <div style="text-align: center;">
+          <a href="page principale.html" class="btn-connexion">Se connecter</a>
+        </div>
+        
+         
+       
+        
+      </form>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulaire de Renseignement -  Masroufi </title>
+  <link rel="stylesheet" href="formulairecss.css">
+  <style>
+    body {
+      /* Utiliser une image de fond */
+      background-image: url("backend\ connexion.jpg");
+      background-size: cover; /* L'image couvre toute la page */
+      background-position: center; /* Centrer l'image */
+      background-attachment: fixed; /* L'image reste fixe lorsqu'on défile */
+      margin: 0; /* Enlever la marge par défaut */
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 50%; /* Assurer que le body prend toute la hauteur de la fenêtre */
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="login-container">
+    <div class="login-form">
+      <h1>LOGIN</h1>
+
+      <!-- Formulaire -->
+      <form id="loginForm" method="POST">
+        <!-- Nom -->
+         <div class="form-row">
+          <div class="form-column">
+        <div class="input-group">
+          <label for="nom">Nom</label>
+          <input type="text" id="nom" name="nom" placeholder="Entrez votre nom" required>
+        </div>
+
+        <!-- Prénom -->
+        <div class="input-group">
+          <label for="prenom">Prénom</label>
+          <input type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom" required>
+        </div>
+
+        <!-- Date de naissance -->
+        <div class="input-group">
+          <label for="dob">Date de naissance</label>
+          <input type="date" id="dob" name="dob" required>
+        </div>
+
+        <!-- Sexe -->
+        <div class="input-group">
+            <label for="sexe">Sexe</label>
+            <select id="sexe" name="sexe" required>
+              <option value="Homme">Homme</option>
+              <option value="Femme">Femme</option>
+            </select>
+          </div>
+          </div>
+  
+          <div class="form-colimn">
+        <!-- Profession -->
+        <div class="input-group">
+            <label for="profession">Profession</label>
+            <select id="profession" name="profession" required>
+              <option value="Étudiant">Étudiant</option>
+              <option value="Employé">Employé</option>
+              <option value="Femme au foyer">Femme au foyer</option>
+              <option value="Autre">Autre</option>
+            </select>
+          </div>
+
+        <!-- Email -->
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Entrez votre email" required>
+        </div>
+
+        <!-- Numéro de téléphone -->
+        <div class="input-group">
+          <label for="tel">Numéro de téléphone</label>
+          <input type="tel" id="tel" name="tel" placeholder="Entrez votre numéro de téléphone" required>
+        </div>
+
+        <div class="input-group">
+          <label for="mdp">mot de passe </label>
+          <input type="password" id="mdp" name="mdp" placeholder="créez votre mot de passe " required>
+        </div> 
+            </div>
+         </div>
+
+        <button type="submit" class="btn-connexion"> inscrire </button>
+      </form>
+
+      <!-- Lien hypertexte -->
+       <p class="account-link">
+      
+        <a href="connexion.html">J'ai déjà un compte ! </a>
+       </p>
+    </div>
+  </div>
+</body>
+</html>
+  
