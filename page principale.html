@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Masroufi - Tableau de bord</title>
+    <link rel="stylesheet" href="principalecss.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <nav>
+        <h1>Masroufi</h1>
+        <ul>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Historique</a></li>
+            <li><a href="#">Statistiques</a></li>
+            <li><a href="#">Paramètres</a></li>
+            <li><a href="#">Déconnexion</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Bienvenue sur Masroufi ✨</h2>
+        <p>Voici un résumé de ta situation financière actuelle.</p>
+
+        <div class="dashboard">
+            <div class="card" id="solde">💰 <strong>Solde Actuel</strong><br>0.00 DT</div>
+            <div class="card" id="revenus">📈 <strong>Revenus du Mois</strong><br>0.00 DT</div>
+            <div class="card" id="depenses">📉 <strong>Dépenses du Mois</strong><br>0.00 DT</div>
+            <div class="card" id="epargne">💵 <strong>Epargne</strong><br>0.00 DT</div>
+        </div>
+
+        <div class="actions">
+            <button onclick="showForm('revenu')">+ Ajouter un Revenu</button>
+            <button onclick="showForm('depense')">+ Ajouter une Dépense</button>
+            <button onclick="showForm('epargne')">+ Ajouter une Epargne</button>
+        </div>
+
+        <div id="form-section" style="display: none;">
+            <h3 id="form-title"></h3>
+            <input type="number" id="montant" placeholder="Montant (DT)" oninput="checkForm()">
+            <input type="text" id="nature" placeholder="Nature (ex: Loyer, Salaire...)" oninput="checkForm()">
+            <button id="valider-btn" onclick="ajouterTransaction()" disabled>Valider</button>
+        </div>
+
+        <div class="chart-container">
+            <canvas id="miniChart"></canvas>
+        </div>
+
+        <ul id="liste-transactions">
+            <!-- Exemple de transaction -->
+            <li class="transaction-revenu">
+                <span>💰</span>
+                <div class="transaction-details">
+                    <div>Salaire</div>
+                    <div class="transaction-date">10 Mars 2023</div>
+                </div>
+                <div class="transaction-montant">+1200 DT</div>
+                <button class="delete-btn">×</button>
+            </li>
+        </ul>
+        <div class="filtres">
+            <button onclick="filtrerTransactions('all')">Toutes</button>
+            <button onclick="filtrerTransactions('revenu')">Revenus</button>
+            <button onclick="filtrerTransactions('depense')">Dépenses</button>
+        </div>
+    </main>
+
+    <script src="accueiljs.js"></script>
+</body>
+</html>
